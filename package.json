@@ -1,7 +1,7 @@
 {
-  "name": "vite-vue3",
+  "name": "egallery",
   "version": "1.0.0",
-  "description": "Starter for Vue 3 with Vite",
+  "description": "Generate awesome gallery",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
@@ -16,11 +16,11 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kmacoders/vite-vue3.git"
+    "url": "https://github.com/kmacoders/egallery.git"
   },
-  "homepage": "https://github.com/kmacoders/vite-vue3",
+  "homepage": "https://github.com/kmacoders/egallery",
   "bugs": {
-    "url": "https://github.com/kmacoders/vite-vue3/issues"
+    "url": "https://github.com/kmacoders/egallery/issues"
   },
   "husky": {
     "hooks": {
