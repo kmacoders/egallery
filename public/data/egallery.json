@@ -1,0 +1,135 @@
+{
+  "images": [
+    {
+      "src": "",
+      "alt": "",
+      "responsive": [
+        {
+          "xl": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "lg": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "md": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "sm": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "xs": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        }
+      ],
+      "text": "",
+      "background": {
+        "type": "solid",
+        "solid": "#ccc",
+        "gradient": "",
+        "gradientEffect": "",
+        "image": "",
+        "video": ""
+      },
+      "parallax": {
+        "enable": true
+      },
+      "scrollAnimation": {
+        "type": ""
+      },
+      "effect": "",
+      "clickAction": {
+        "type": "link|video",
+        "href": "",
+        "target": "",
+				"src": ""
+      },
+      "button": {
+        "className": "",
+        "position": "",
+        "margin": ""
+      }
+    }
+  ],
+  "gallery": {
+    "gap": 0,
+    "effect": "",
+    "title": "",
+    "description": "",
+    "loading": {
+      "className": ""
+    },
+    "popup": {
+      "effect": "transitionf",
+      "enable": true,
+      "caption": true,
+      "isTitle": true,
+      "isDesc": false,
+      "opacity": 80,
+      "isZoom": true,
+      "bgOpacity": 80
+    },
+    "limit": {
+      "enable": false,
+      "text": "+{number} items",
+      "items": 4
+    },
+    "filter": {
+      "allText": "ALL",
+      "enableCount": true,
+      "enable": false,
+      "items": [],
+      "textClass": "",
+      "eff": "none",
+      "countString": "({number})"
+    },
+    "loadmore": {
+      "enable": false,
+      "first": 20,
+      "more": 10,
+      "onScroll": false,
+      "buttonText": "Load More",
+      "buttonStyle": "",
+      "loadingText": "Loading..."
+    }
+  },
+  "settings": {
+    "buttons": [
+      {
+        "className": "",
+        "css": ""
+      }
+    ],
+    "loadings": [
+      {
+        "className": "",
+        "svg": "",
+        "color": ""
+      }
+    ],
+    "lazyLoad": true
+  }
+}
