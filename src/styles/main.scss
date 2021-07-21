@@ -1,0 +1,13 @@
+.a {
+  .b {
+    .c {
+      .d {
+        // test lint
+      }
+    }
+  }
+}
+
+.author {
+  color: #25791e;
+}
