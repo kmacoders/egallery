@@ -1,70 +1,71 @@
 <template>
-  <div class="grid">
-  <div class="item">
-    <div class="item-content">
-      <!-- Safe zone, enter your custom markup -->
-      This can be anything.
-      <!-- Safe zone ends -->
-    </div>
-  </div>
-
-  <div class="item">
-    <div class="item-content">
-      <!-- Safe zone, enter your custom markup -->
-      <div class="my-custom-content">
-        Yippee!
-      </div>
-      <!-- Safe zone ends -->
-    </div>
-  </div>
-</div>
+  <main id="app">
+    <button
+      type="button"
+      @click="addNewWidget()"
+    >
+      Add Widget
+    </button> {{ info }}
+    <section class="grid-stack" />
+  </main>
 </template>
 
 <script lang="ts">
 import { ref, defineComponent, onMounted } from 'vue';
-import Muuri from 'muuri';
-import { qs } from '../helpers/dom';
+import { GridStack } from 'gridstack';
 
 export default defineComponent({
-  name: 'TestGrid',
+  name: 'HelloWorld',
   setup() {
+    const count = ref(0);
+    const info = ref('');
+    let grid = null;
+    const items = [
+      { x: 2, y: 1, h: 2 },
+      { x: 2, y: 4, w: 3 },
+      { x: 4, y: 2 },
+      { x: 3, y: 1, h: 2 },
+      {
+        x: 0, y: 6, w: 2, h: 2,
+      },
+    ];
+
     onMounted(() => {
-      const gridEl = qs('.grid');
-      console.log(gridEl)
-      const grid = new Muuri('.grid', {
-        dragEnabled: true,
+      grid = GridStack.init({
+        float: true,
+        cellHeight: '70px',
+        minRow: 1,
       });
-    })
+
+      // Use an arrow function so that `this` is bound to the Vue instance. Alternatively, use a custom Vue directive on the `.grid-stack` container element: https://vuejs.org/v2/guide/custom-directive.html
+      grid.on('dragstop', (event, element) => {
+        const node = element.gridstackNode;
+        // `this` will only access your Vue instance if you used an arrow function, otherwise `this` binds to window scope. see https://hacks.mozilla.org/2015/06/es6-in-depth-arrow-functions/
+        info.value = `you just dragged node #${node.id} to ${node.x},${node.y} – good job!`;
+      });
+    });
+
+    function addNewWidget() {
+      const node = items[count.value] || {
+        x: Math.round(12 * Math.random()),
+        y: Math.round(5 * Math.random()),
+        w: Math.round(1 + 3 * Math.random()),
+        h: Math.round(1 + 3 * Math.random()),
+      };
+      node.id = node.content = String(count.value++);
+      grid.addWidget(node);
+    }
+
+    return {
+      info,
+      addNewWidget,
+    };
   },
 });
 </script>
 
-<style lang="scss" scoped>
-.grid {
-  position: relative;
-}
-.item {
-  display: block;
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  margin: 5px;
-  z-index: 1;
-  background: #000;
-  color: #fff;
-}
-.item.muuri-item-dragging {
-  z-index: 3;
-}
-.item.muuri-item-releasing {
-  z-index: 2;
-}
-.item.muuri-item-hidden {
-  z-index: 0;
-}
-.item-content {
-  position: relative;
-  width: 100%;
-  height: 100%;
+<style lang="scss">
+.grid-stack-item {
+  border: 1px solid #000;
 }
 </style>
