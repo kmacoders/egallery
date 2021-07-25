@@ -5,17 +5,20 @@
   >
   <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
   <div class="author"> By {{ author.name }} {{ author.age }}</div>
+  <TestGrid />
 </template>
 
 <script lang="ts">
 import { defineComponent, reactive } from 'vue';
 import HelloWorld from '@/components/HelloWorld.vue';
+import TestGrid from '@/components/TestGrid.vue';
 import { Author } from '@/types/Author';
 
 export default defineComponent({
   name: 'App',
   components: {
     HelloWorld,
+    TestGrid,
   },
   setup() {
     const author: Author = reactive({
