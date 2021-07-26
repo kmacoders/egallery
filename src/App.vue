@@ -18,6 +18,7 @@
 
 <script lang="ts">
 import { defineComponent, reactive } from 'vue';
+import { useStore } from 'vuex';
 import GridLayout from '@/components/vue-grid-layout/GridLayout.vue';
 import GridItem from '@/components/vue-grid-layout/GridItem.vue';
 
@@ -28,7 +29,8 @@ export default defineComponent({
     GridItem,
   },
   setup() {
-
+    const s = useStore();
+    console.log(s.state.EGallery.name)
   },
 });
 </script>

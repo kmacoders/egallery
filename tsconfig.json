@@ -17,6 +17,7 @@
       "esnext",
       "dom"
     ],
+    "strictPropertyInitialization": false,
     "experimentalDecorators": true,
   },
   "include": [
