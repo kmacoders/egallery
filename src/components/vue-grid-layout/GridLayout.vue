@@ -1,16 +1,13 @@
 <template>
   <div
     class="r-grid-container"
-    :style="{
-      gridTemplateColumns: `repeat(${columnsNumber}, 1fr)`,
-      gridTemplateRows: `repeat(${rowsNumber}, ${rowHeight}px)`
-    }"
+    :style="styleObj"
   >
     <slot/>
   </div>
 </template>
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, reactive } from 'vue';
 
 export default defineComponent({
   name: 'GridLayout',
@@ -33,7 +30,15 @@ export default defineComponent({
     },
   },
   setup(props) {
+    const styleObj = reactive({
+      gridTemplateColumns: `repeat(${props.columnsNumber}, 1fr)`,
+      gridTemplateRows: `repeat(${props.rowsNumber}, ${props.rowHeight}px)`,
+      gap: `${props.gap}px`,
+    });
 
+    return {
+      styleObj,
+    };
   },
 });
 </script>

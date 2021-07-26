@@ -51,11 +51,10 @@ export default defineComponent({
     },
   },
   setup(props) {
-    console.log(props)
     const styleObj = reactive({
       backgroundColor: `${props.backgroundColor}`,
-      gridColumn: `${Number(props.x) + 1}/ span ${Number(props.w)}`,
-      gridRow: `${Number(props.y) + 1}/ span ${Number(props.h)}`,
+      gridColumn: `${Number(props.x) + 1}/ span ${props.w}`,
+      gridRow: `${Number(props.y) + 1}/ span ${props.h}`,
     });
 
     return {
