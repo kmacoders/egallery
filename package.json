@@ -28,8 +28,9 @@
     }
   },
   "dependencies": {
-    "gridstack": "^4.2.6",
-    "vue": "^3.0.5"
+    "vue": "^3.0.5",
+    "vuex": "^4.0.2",
+    "vuex-module-decorators": "^1.0.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",

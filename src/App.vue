@@ -1,10 +1,5 @@
 <template>
-  <img
-    alt="Vue logo"
-    src="./assets/logo.png"
-  >
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
-  <div class="author"> By {{ author.name }} {{ author.age }}</div>
+  <h1>eGallery</h1>
   <GridLayout
     :columns-number="12"
     :rows-number="30"
@@ -17,34 +12,23 @@
       :w="11"
       :h="3"
     >
-      Item 1
     </GridItem>
   </GridLayout>
 </template>
 
 <script lang="ts">
 import { defineComponent, reactive } from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue';
 import GridLayout from '@/components/vue-grid-layout/GridLayout.vue';
 import GridItem from '@/components/vue-grid-layout/GridItem.vue';
-import { Author } from '@/types/Author';
 
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld,
     GridLayout,
     GridItem,
   },
   setup() {
-    const author: Author = reactive({
-      name: 'Huwng',
-      age: 30,
-    });
 
-    return {
-      author,
-    };
   },
 });
 </script>
