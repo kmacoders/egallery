@@ -3,7 +3,7 @@
   <GridLayout
     :columns-number="12"
     :rows-number="30"
-    :row-height="60"
+    :row-height="30"
     :gap="15"
   >
     <GridItem

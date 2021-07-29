@@ -1,7 +1,7 @@
 {
   "images": [
     {
-      "id": "GakTV",
+      "id": "rpagi",
       "src":"https://source.unsplash.com/collection/190727/1600x900",
       "alt": "",
       "layout": {
@@ -37,6 +37,20 @@
         }
       },
       "text": "",
+      "background": {
+        "type": "solid",
+        "solid": "",
+        "gradient": "",
+        "gradientEffect": "",
+        "image": "",
+        "video": ""
+      },
+      "parallax": {
+        "enable": false
+      },
+      "scrollAnimation": {
+        "types": ""
+      },
       "effect": "",
       "clickAction": {
         "type": "",
@@ -51,15 +65,15 @@
       }
     },
     {
-      "id": "GyZES",
+      "id": "fKKWx",
       "src":"https://source.unsplash.com/collection/190727/1600x900",
       "alt": "",
       "layout": {
         "xl": {
-          "x": 7,
+          "x": 0,
           "y": 0,
-          "w": 3,
-          "h": 9
+          "w": 2,
+          "h": 4
         },
         "lg": {
           "x": 0,
@@ -87,6 +101,20 @@
         }
       },
       "text": "",
+      "background": {
+        "type": "solid",
+        "solid": "",
+        "gradient": "",
+        "gradientEffect": "",
+        "image": "",
+        "video": ""
+      },
+      "parallax": {
+        "enable": false
+      },
+      "scrollAnimation": {
+        "types": ""
+      },
       "effect": "",
       "clickAction": {
         "type": "",
@@ -101,15 +129,15 @@
       }
     },
     {
-      "id": "ororU",
+      "id": "syIvO",
       "src":"https://source.unsplash.com/collection/190727/1600x900",
       "alt": "",
       "layout": {
         "xl": {
-          "x": 2,
+          "x": 0,
           "y": 0,
-          "w": 5,
-          "h": 9
+          "w": 2,
+          "h": 4
         },
         "lg": {
           "x": 0,
@@ -137,6 +165,20 @@
         }
       },
       "text": "",
+      "background": {
+        "type": "solid",
+        "solid": "",
+        "gradient": "",
+        "gradientEffect": "",
+        "image": "",
+        "video": ""
+      },
+      "parallax": {
+        "enable": false
+      },
+      "scrollAnimation": {
+        "types": ""
+      },
       "effect": "",
       "clickAction": {
         "type": "",
@@ -151,13 +193,13 @@
       }
     },
     {
-      "id": "ZQlGx",
+      "id": "cBwXY",
       "src":"https://source.unsplash.com/collection/190727/1600x900",
       "alt": "",
       "layout": {
         "xl": {
-          "x": 4,
-          "y": 91,
+          "x": 0,
+          "y": 0,
           "w": 2,
           "h": 4
         },
@@ -187,6 +229,20 @@
         }
       },
       "text": "",
+      "background": {
+        "type": "solid",
+        "solid": "",
+        "gradient": "",
+        "gradientEffect": "",
+        "image": "",
+        "video": ""
+      },
+      "parallax": {
+        "enable": false
+      },
+      "scrollAnimation": {
+        "types": ""
+      },
       "effect": "",
       "clickAction": {
         "type": "",
@@ -201,13 +257,13 @@
       }
     },
     {
-      "id": "XLCej",
+      "id": "jUoBn",
       "src":"https://source.unsplash.com/collection/190727/1600x900",
       "alt": "",
       "layout": {
         "xl": {
-          "x": 2,
-          "y": 95,
+          "x": 0,
+          "y": 0,
           "w": 2,
           "h": 4
         },
@@ -237,6 +293,20 @@
         }
       },
       "text": "",
+      "background": {
+        "type": "solid",
+        "solid": "",
+        "gradient": "",
+        "gradientEffect": "",
+        "image": "",
+        "video": ""
+      },
+      "parallax": {
+        "enable": false
+      },
+      "scrollAnimation": {
+        "types": ""
+      },
       "effect": "",
       "clickAction": {
         "type": "",
@@ -251,13 +321,13 @@
       }
     },
     {
-      "id": "BVKdk",
+      "id": "ibkpW",
       "src":"https://source.unsplash.com/collection/190727/1600x900",
       "alt": "",
       "layout": {
         "xl": {
           "x": 0,
-          "y": 95,
+          "y": 0,
           "w": 2,
           "h": 4
         },
@@ -287,6 +357,20 @@
         }
       },
       "text": "",
+      "background": {
+        "type": "solid",
+        "solid": "",
+        "gradient": "",
+        "gradientEffect": "",
+        "image": "",
+        "video": ""
+      },
+      "parallax": {
+        "enable": false
+      },
+      "scrollAnimation": {
+        "types": ""
+      },
       "effect": "",
       "clickAction": {
         "type": "",
@@ -301,15 +385,15 @@
       }
     },
     {
-      "id": "YhTXU",
+      "id": "HvsVH",
       "src":"https://source.unsplash.com/collection/190727/1600x900",
       "alt": "",
       "layout": {
         "xl": {
-          "x": 6,
-          "y": 91,
-          "w": 4,
-          "h": 8
+          "x": 0,
+          "y": 0,
+          "w": 2,
+          "h": 4
         },
         "lg": {
           "x": 0,
@@ -337,6 +421,20 @@
         }
       },
       "text": "",
+      "background": {
+        "type": "solid",
+        "solid": "",
+        "gradient": "",
+        "gradientEffect": "",
+        "image": "",
+        "video": ""
+      },
+      "parallax": {
+        "enable": false
+      },
+      "scrollAnimation": {
+        "types": ""
+      },
       "effect": "",
       "clickAction": {
         "type": "",
@@ -351,13 +449,13 @@
       }
     },
     {
-      "id": "yqiJP",
+      "id": "fvqji",
       "src":"https://source.unsplash.com/collection/190727/1600x900",
       "alt": "",
       "layout": {
         "xl": {
-          "x": 4,
-          "y": 95,
+          "x": 0,
+          "y": 0,
           "w": 2,
           "h": 4
         },
@@ -387,6 +485,20 @@
         }
       },
       "text": "",
+      "background": {
+        "type": "solid",
+        "solid": "",
+        "gradient": "",
+        "gradientEffect": "",
+        "image": "",
+        "video": ""
+      },
+      "parallax": {
+        "enable": false
+      },
+      "scrollAnimation": {
+        "types": ""
+      },
       "effect": "",
       "clickAction": {
         "type": "",
@@ -401,13 +513,13 @@
       }
     },
     {
-      "id": "SyEXm",
+      "id": "lRQUV",
       "src":"https://source.unsplash.com/collection/190727/1600x900",
       "alt": "",
       "layout": {
         "xl": {
-          "x": 2,
-          "y": 91,
+          "x": 0,
+          "y": 0,
           "w": 2,
           "h": 4
         },
@@ -437,6 +549,20 @@
         }
       },
       "text": "",
+      "background": {
+        "type": "solid",
+        "solid": "",
+        "gradient": "",
+        "gradientEffect": "",
+        "image": "",
+        "video": ""
+      },
+      "parallax": {
+        "enable": false
+      },
+      "scrollAnimation": {
+        "types": ""
+      },
       "effect": "",
       "clickAction": {
         "type": "",
@@ -451,13 +577,13 @@
       }
     },
     {
-      "id": "AdlPy",
+      "id": "iDWKc",
       "src":"https://source.unsplash.com/collection/190727/1600x900",
       "alt": "",
       "layout": {
         "xl": {
           "x": 0,
-          "y": 91,
+          "y": 0,
           "w": 2,
           "h": 4
         },
@@ -487,6 +613,20 @@
         }
       },
       "text": "",
+      "background": {
+        "type": "solid",
+        "solid": "",
+        "gradient": "",
+        "gradientEffect": "",
+        "image": "",
+        "video": ""
+      },
+      "parallax": {
+        "enable": false
+      },
+      "scrollAnimation": {
+        "types": ""
+      },
       "effect": "",
       "clickAction": {
         "type": "",
@@ -501,15 +641,15 @@
       }
     },
     {
-      "id": "SZUiU",
+      "id": "BAKjL",
       "src":"https://source.unsplash.com/collection/190727/1600x900",
       "alt": "",
       "layout": {
         "xl": {
-          "x": 4,
-          "y": 82,
-          "w": 6,
-          "h": 9
+          "x": 0,
+          "y": 0,
+          "w": 2,
+          "h": 4
         },
         "lg": {
           "x": 0,
@@ -537,6 +677,20 @@
         }
       },
       "text": "",
+      "background": {
+        "type": "solid",
+        "solid": "",
+        "gradient": "",
+        "gradientEffect": "",
+        "image": "",
+        "video": ""
+      },
+      "parallax": {
+        "enable": false
+      },
+      "scrollAnimation": {
+        "types": ""
+      },
       "effect": "",
       "clickAction": {
         "type": "",
@@ -551,15 +705,15 @@
       }
     },
     {
-      "id": "DdvWN",
+      "id": "YdSNo",
       "src":"https://source.unsplash.com/collection/190727/1600x900",
       "alt": "",
       "layout": {
         "xl": {
           "x": 0,
-          "y": 82,
-          "w": 4,
-          "h": 9
+          "y": 0,
+          "w": 2,
+          "h": 4
         },
         "lg": {
           "x": 0,
@@ -587,6 +741,20 @@
         }
       },
       "text": "",
+      "background": {
+        "type": "solid",
+        "solid": "",
+        "gradient": "",
+        "gradientEffect": "",
+        "image": "",
+        "video": ""
+      },
+      "parallax": {
+        "enable": false
+      },
+      "scrollAnimation": {
+        "types": ""
+      },
       "effect": "",
       "clickAction": {
         "type": "",
@@ -601,15 +769,15 @@
       }
     },
     {
-      "id": "tiMrL",
+      "id": "xAkVU",
       "src":"https://source.unsplash.com/collection/190727/1600x900",
       "alt": "",
       "layout": {
         "xl": {
           "x": 0,
-          "y": 77,
-          "w": 5,
-          "h": 5
+          "y": 0,
+          "w": 2,
+          "h": 4
         },
         "lg": {
           "x": 0,
@@ -637,6 +805,20 @@
         }
       },
       "text": "",
+      "background": {
+        "type": "solid",
+        "solid": "",
+        "gradient": "",
+        "gradientEffect": "",
+        "image": "",
+        "video": ""
+      },
+      "parallax": {
+        "enable": false
+      },
+      "scrollAnimation": {
+        "types": ""
+      },
       "effect": "",
       "clickAction": {
         "type": "",
@@ -651,15 +833,15 @@
       }
     },
     {
-      "id": "JJXUv",
+      "id": "dlMmT",
       "src":"https://source.unsplash.com/collection/190727/1600x900",
       "alt": "",
       "layout": {
         "xl": {
-          "x": 7,
-          "y": 70,
-          "w": 3,
-          "h": 12
+          "x": 0,
+          "y": 0,
+          "w": 2,
+          "h": 4
         },
         "lg": {
           "x": 0,
@@ -687,6 +869,20 @@
         }
       },
       "text": "",
+      "background": {
+        "type": "solid",
+        "solid": "",
+        "gradient": "",
+        "gradientEffect": "",
+        "image": "",
+        "video": ""
+      },
+      "parallax": {
+        "enable": false
+      },
+      "scrollAnimation": {
+        "types": ""
+      },
       "effect": "",
       "clickAction": {
         "type": "",
@@ -701,15 +897,15 @@
       }
     },
     {
-      "id": "wGKhJ",
+      "id": "jsIag",
       "src":"https://source.unsplash.com/collection/190727/1600x900",
       "alt": "",
       "layout": {
         "xl": {
-          "x": 5,
-          "y": 70,
+          "x": 0,
+          "y": 0,
           "w": 2,
-          "h": 12
+          "h": 4
         },
         "lg": {
           "x": 0,
@@ -737,6 +933,20 @@
         }
       },
       "text": "",
+      "background": {
+        "type": "solid",
+        "solid": "",
+        "gradient": "",
+        "gradientEffect": "",
+        "image": "",
+        "video": ""
+      },
+      "parallax": {
+        "enable": false
+      },
+      "scrollAnimation": {
+        "types": ""
+      },
       "effect": "",
       "clickAction": {
         "type": "",
@@ -751,15 +961,15 @@
       }
     },
     {
-      "id": "hJzhL",
+      "id": "SvEIh",
       "src":"https://source.unsplash.com/collection/190727/1600x900",
       "alt": "",
       "layout": {
         "xl": {
           "x": 0,
-          "y": 70,
-          "w": 5,
-          "h": 7
+          "y": 0,
+          "w": 2,
+          "h": 4
         },
         "lg": {
           "x": 0,
@@ -787,6 +997,20 @@
         }
       },
       "text": "",
+      "background": {
+        "type": "solid",
+        "solid": "",
+        "gradient": "",
+        "gradientEffect": "",
+        "image": "",
+        "video": ""
+      },
+      "parallax": {
+        "enable": false
+      },
+      "scrollAnimation": {
+        "types": ""
+      },
       "effect": "",
       "clickAction": {
         "type": "",
@@ -801,15 +1025,15 @@
       }
     },
     {
-      "id": "ZuclB",
+      "id": "XIQVR",
       "src":"https://source.unsplash.com/collection/190727/1600x900",
       "alt": "",
       "layout": {
         "xl": {
-          "x": 4,
-          "y": 59,
-          "w": 6,
-          "h": 11
+          "x": 0,
+          "y": 0,
+          "w": 2,
+          "h": 4
         },
         "lg": {
           "x": 0,
@@ -837,6 +1061,20 @@
         }
       },
       "text": "",
+      "background": {
+        "type": "solid",
+        "solid": "",
+        "gradient": "",
+        "gradientEffect": "",
+        "image": "",
+        "video": ""
+      },
+      "parallax": {
+        "enable": false
+      },
+      "scrollAnimation": {
+        "types": ""
+      },
       "effect": "",
       "clickAction": {
         "type": "",
@@ -851,15 +1089,15 @@
       }
     },
     {
-      "id": "pTjpU",
+      "id": "urRRV",
       "src":"https://source.unsplash.com/collection/190727/1600x900",
       "alt": "",
       "layout": {
         "xl": {
           "x": 0,
-          "y": 59,
-          "w": 4,
-          "h": 11
+          "y": 0,
+          "w": 2,
+          "h": 4
         },
         "lg": {
           "x": 0,
@@ -887,6 +1125,20 @@
         }
       },
       "text": "",
+      "background": {
+        "type": "solid",
+        "solid": "",
+        "gradient": "",
+        "gradientEffect": "",
+        "image": "",
+        "video": ""
+      },
+      "parallax": {
+        "enable": false
+      },
+      "scrollAnimation": {
+        "types": ""
+      },
       "effect": "",
       "clickAction": {
         "type": "",
@@ -901,15 +1153,15 @@
       }
     },
     {
-      "id": "lZoMM",
+      "id": "PWZtj",
       "src":"https://source.unsplash.com/collection/190727/1600x900",
       "alt": "",
       "layout": {
         "xl": {
-          "x": 8,
-          "y": 46,
+          "x": 0,
+          "y": 0,
           "w": 2,
-          "h": 13
+          "h": 4
         },
         "lg": {
           "x": 0,
@@ -937,6 +1189,20 @@
         }
       },
       "text": "",
+      "background": {
+        "type": "solid",
+        "solid": "",
+        "gradient": "",
+        "gradientEffect": "",
+        "image": "",
+        "video": ""
+      },
+      "parallax": {
+        "enable": false
+      },
+      "scrollAnimation": {
+        "types": ""
+      },
       "effect": "",
       "clickAction": {
         "type": "",
@@ -951,15 +1217,15 @@
       }
     },
     {
-      "id": "xsUCA",
+      "id": "yQWFq",
       "src":"https://source.unsplash.com/collection/190727/1600x900",
       "alt": "",
       "layout": {
         "xl": {
           "x": 0,
-          "y": 46,
-          "w": 8,
-          "h": 13
+          "y": 0,
+          "w": 2,
+          "h": 4
         },
         "lg": {
           "x": 0,
@@ -987,506 +1253,20 @@
         }
       },
       "text": "",
-      "effect": "",
-      "clickAction": {
-        "type": "",
-        "href": "",
-        "target": "",
-        "src": ""
+      "background": {
+        "type": "solid",
+        "solid": "",
+        "gradient": "",
+        "gradientEffect": "",
+        "image": "",
+        "video": ""
       },
-      "button": {
-        "className": "",
-        "position": "",
-        "margin": 0
-      }
-    },
-    {
-      "id": "NlzXb",
-      "src":"https://source.unsplash.com/collection/190727/1600x900",
-      "alt": "",
-      "layout": {
-        "xl": {
-          "x": 5,
-          "y": 35,
-          "w": 5,
-          "h": 11
-        },
-        "lg": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        },
-        "md": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        },
-        "sm": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        },
-        "xs": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        }
+      "parallax": {
+        "enable": false
       },
-      "text": "",
-      "effect": "",
-      "clickAction": {
-        "type": "",
-        "href": "",
-        "target": "",
-        "src": ""
+      "scrollAnimation": {
+        "types": ""
       },
-      "button": {
-        "className": "",
-        "position": "",
-        "margin": 0
-      }
-    },
-    {
-      "id": "aKajp",
-      "src":"https://source.unsplash.com/collection/190727/1600x900",
-      "alt": "",
-      "layout": {
-        "xl": {
-          "x": 0,
-          "y": 35,
-          "w": 5,
-          "h": 11
-        },
-        "lg": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        },
-        "md": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        },
-        "sm": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        },
-        "xs": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        }
-      },
-      "text": "",
-      "effect": "",
-      "clickAction": {
-        "type": "",
-        "href": "",
-        "target": "",
-        "src": ""
-      },
-      "button": {
-        "className": "",
-        "position": "",
-        "margin": 0
-      }
-    },
-    {
-      "id": "QRDVo",
-      "src":"https://source.unsplash.com/collection/190727/1600x900",
-      "alt": "",
-      "layout": {
-        "xl": {
-          "x": 3,
-          "y": 29,
-          "w": 7,
-          "h": 6
-        },
-        "lg": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        },
-        "md": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        },
-        "sm": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        },
-        "xs": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        }
-      },
-      "text": "",
-      "effect": "",
-      "clickAction": {
-        "type": "",
-        "href": "",
-        "target": "",
-        "src": ""
-      },
-      "button": {
-        "className": "",
-        "position": "",
-        "margin": 0
-      }
-    },
-    {
-      "id": "mZGoT",
-      "src":"https://source.unsplash.com/collection/190727/1600x900",
-      "alt": "",
-      "layout": {
-        "xl": {
-          "x": 0,
-          "y": 25,
-          "w": 3,
-          "h": 10
-        },
-        "lg": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        },
-        "md": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        },
-        "sm": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        },
-        "xs": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        }
-      },
-      "text": "",
-      "effect": "",
-      "clickAction": {
-        "type": "",
-        "href": "",
-        "target": "",
-        "src": ""
-      },
-      "button": {
-        "className": "",
-        "position": "",
-        "margin": 0
-      }
-    },
-    {
-      "id": "yivNc",
-      "src":"https://source.unsplash.com/collection/190727/1600x900",
-      "alt": "",
-      "layout": {
-        "xl": {
-          "x": 6,
-          "y": 17,
-          "w": 4,
-          "h": 12
-        },
-        "lg": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        },
-        "md": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        },
-        "sm": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        },
-        "xs": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        }
-      },
-      "text": "",
-      "effect": "",
-      "clickAction": {
-        "type": "",
-        "href": "",
-        "target": "",
-        "src": ""
-      },
-      "button": {
-        "className": "",
-        "position": "",
-        "margin": 0
-      }
-    },
-    {
-      "id": "hjWPZ",
-      "src":"https://source.unsplash.com/collection/190727/1600x900",
-      "alt": "",
-      "layout": {
-        "xl": {
-          "x": 3,
-          "y": 17,
-          "w": 3,
-          "h": 12
-        },
-        "lg": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        },
-        "md": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        },
-        "sm": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        },
-        "xs": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        }
-      },
-      "text": "",
-      "effect": "",
-      "clickAction": {
-        "type": "",
-        "href": "",
-        "target": "",
-        "src": ""
-      },
-      "button": {
-        "className": "",
-        "position": "",
-        "margin": 0
-      }
-    },
-    {
-      "id": "jmbls",
-      "src":"https://source.unsplash.com/collection/190727/1600x900",
-      "alt": "",
-      "layout": {
-        "xl": {
-          "x": 0,
-          "y": 17,
-          "w": 3,
-          "h": 8
-        },
-        "lg": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        },
-        "md": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        },
-        "sm": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        },
-        "xs": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        }
-      },
-      "text": "",
-      "effect": "",
-      "clickAction": {
-        "type": "",
-        "href": "",
-        "target": "",
-        "src": ""
-      },
-      "button": {
-        "className": "",
-        "position": "",
-        "margin": 0
-      }
-    },
-    {
-      "id": "ChcyW",
-      "src":"https://source.unsplash.com/collection/190727/1600x900",
-      "alt": "",
-      "layout": {
-        "xl": {
-          "x": 7,
-          "y": 9,
-          "w": 3,
-          "h": 8
-        },
-        "lg": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        },
-        "md": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        },
-        "sm": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        },
-        "xs": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        }
-      },
-      "text": "",
-      "effect": "",
-      "clickAction": {
-        "type": "",
-        "href": "",
-        "target": "",
-        "src": ""
-      },
-      "button": {
-        "className": "",
-        "position": "",
-        "margin": 0
-      }
-    },
-    {
-      "id": "FTFdc",
-      "src":"https://source.unsplash.com/collection/190727/1600x900",
-      "alt": "",
-      "layout": {
-        "xl": {
-          "x": 0,
-          "y": 9,
-          "w": 7,
-          "h": 8
-        },
-        "lg": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        },
-        "md": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        },
-        "sm": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        },
-        "xs": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        }
-      },
-      "text": "",
-      "effect": "",
-      "clickAction": {
-        "type": "",
-        "href": "",
-        "target": "",
-        "src": ""
-      },
-      "button": {
-        "className": "",
-        "position": "",
-        "margin": 0
-      }
-    },
-    {
-      "id": "PQoSP",
-      "src":"https://source.unsplash.com/collection/190727/1600x900",
-      "alt": "",
-      "layout": {
-        "xl": {
-          "x": 0,
-          "y": 4,
-          "w": 2,
-          "h": 5
-        },
-        "lg": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        },
-        "md": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        },
-        "sm": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        },
-        "xs": {
-          "x": 0,
-          "y": 0,
-          "w": 2,
-          "h": 4
-        }
-      },
-      "text": "",
       "effect": "",
       "clickAction": {
         "type": "",
@@ -1555,26 +1335,6 @@
       "buttonStyle": "",
       "loadingText": "Loading...",
       "load": 20
-    },
-    "settings": {
-      "background": {
-        "type": "solid",
-        "solid": "",
-        "gradient": "",
-        "gradientEffect": "",
-        "image": "",
-        "video": ""
-      },
-      "parallax": {
-        "enable": false
-      },
-      "scrollAnimation": {
-        "type": ""
-      },
-      "loadingAnimation": {
-        "type": ""
-      },
-      "rowHeight": 30
     }
   },
   "settings": {
