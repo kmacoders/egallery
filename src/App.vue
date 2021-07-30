@@ -4,18 +4,20 @@
       <GridDefault />
     </template>
     <template #fallback>
-      Loading
+      <SvgIcon />
     </template>
   </Suspense>
 </template>
 
 <script lang="ts">
 import { defineAsyncComponent, defineComponent } from 'vue';
+import SvgIcon from '@/components/loading/SvgIcon.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
     GridDefault: defineAsyncComponent(() => import('@/components/GridDefault.vue')),
+    SvgIcon,
   },
 });
 </script>
