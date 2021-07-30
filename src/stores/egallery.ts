@@ -1,12 +1,11 @@
-import {EMULTIHOP} from 'constants';
 import {
   VuexModule,
   Module,
   Mutation,
-  Action
+  Action,
 } from 'vuex-module-decorators';
 import GetData from '../helpers/GetData';
-import {IEGallery} from '../types';
+import { stall } from '../helpers/utils';
 import { IGallery } from '../types/gallery';
 import { IImage } from '../types/images';
 import { ISettings } from '../types/settings';
@@ -14,7 +13,7 @@ import { ISettings } from '../types/settings';
 enum MutationType {
   setImages = 'SET_IMAGES',
   setGallery = 'SET_GALLERY',
-  setSettings = 'SET_SETTINGS'
+  setSettings = 'SET_SETTINGS',
 }
 
 @Module
@@ -54,10 +53,11 @@ export default class EGallery extends VuexModule {
 
   @Action
   async getData(): Promise<void> {
+    // TODO: remove fake
+    await stall(1500);
     const data = await GetData.getDataJson();
     this.context.commit(MutationType.setImages, data.images);
     this.context.commit(MutationType.setGallery, data.gallery);
     this.context.commit(MutationType.setSettings, data.settings);
-    console.log('dispatch')
   }
 }

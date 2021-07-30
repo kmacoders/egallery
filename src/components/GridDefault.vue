@@ -36,8 +36,6 @@ export default defineComponent({
     await store.dispatch('getData');
     const images = computed(() => store.getters.getImages);
 
-    console.log(images.value)
-
     return {
       images,
     };

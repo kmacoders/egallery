@@ -10,13 +10,12 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import GridDefault from '@/components/GridDefault.vue';
+import { defineAsyncComponent, defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'App',
   components: {
-    GridDefault,
+    GridDefault: defineAsyncComponent(() => import('@/components/GridDefault.vue')),
   },
 });
 </script>
