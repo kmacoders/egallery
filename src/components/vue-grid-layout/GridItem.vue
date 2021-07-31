@@ -1,6 +1,7 @@
 <template>
   <div
     class="r-grid-item"
+    data-aos="flip-left"
     :style="styleObj"
   >
     <slot></slot>
@@ -46,7 +47,7 @@ export default defineComponent({
     },
     backgroundColor: {
       type: String,
-      default: '#0091ea',
+      default: '#eee',
       validator: (strColor: string): boolean => /^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/i.test(strColor),
     },
   },

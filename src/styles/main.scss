@@ -1,13 +1,2 @@
-.a {
-  .b {
-    .c {
-      .d {
-        // test lint
-      }
-    }
-  }
-}
-
-.author {
-  color: #25791e;
-}
+@import './vendors/vendors-dir.scss';
+@import './utils/utils-dir';
