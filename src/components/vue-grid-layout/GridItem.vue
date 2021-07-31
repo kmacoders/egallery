@@ -1,6 +1,6 @@
 <template>
   <div
-    class="r-grid-item"
+    class="r-grid-item image"
     data-aos="flip-left"
     :style="styleObj"
   >
