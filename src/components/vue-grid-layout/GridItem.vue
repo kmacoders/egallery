@@ -1,10 +1,11 @@
 <template>
   <div
-    class="r-grid-item image"
-    data-aos="flip-left"
+    v-aos="'zoom-in'"
+    v-aos-once="true"
+    class="r-grid-item loading-ui is-image"
     :style="styleObj"
   >
-    <slot></slot>
+    <slot />
   </div>
 </template>
 <script lang="ts">

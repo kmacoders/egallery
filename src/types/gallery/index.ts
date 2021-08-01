@@ -41,7 +41,12 @@ interface ILoadmore {
 
 // Gallery
 export interface IGallery {
-  gap: number;
+  rowGap: {
+    [key: string]: number;
+  };
+  columnGap: {
+    [key: string]: number;
+  };
   effect: string;
   title: string;
   description: string;

@@ -1269,7 +1269,7 @@
         "enable": false
       },
       "scrollAnimation": {
-        "type": ""
+        "type": "zoom-in"
       },
       "loadingAnimation": {
         "type": ""

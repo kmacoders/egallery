@@ -1,4 +1,4 @@
-interface IGridLocation {
+export interface IGridLocation {
   x: number;
   y: number;
   w: number;
@@ -38,7 +38,9 @@ interface IImageButton {
 export interface IImage {
   src: string;
   alt: string;
-  responsive: Record<'xs' | 'sm' | 'md' | 'lg' | 'xl', IGridLocation>[];
+  layout: {
+    [key: string]: IGridLocation;
+  };
   text: string;
   background: IBackground;
   parallax: IParallax;
