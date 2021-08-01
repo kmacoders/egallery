@@ -1,17 +1,13 @@
 <template>
   <h1>eGallery</h1>
-  <div class="font-mono">
-    <div> xs: {{ Boolean(xs) }}</div>
-    <div> sm: {{ Boolean(sm) }}</div>
-    <div> md: {{ Boolean(md) }}</div>
-    <div> lg: {{ Boolean(lg) }}</div>
-    <div> xl: {{ Boolean(xl) }}</div>
-  </div>
+  <!--TODO: Sủa lại cả gap và x, y, w, h theo 1 cách nào đó-->
+  <!--khôg cần đến nhân lên nhiều v-if-->
   <GridLayout
     :columns-number="12"
     :rows-number="30"
     :row-height="30"
-    :gap="15"
+    :row-gap="15"
+    :column-gap="15"
   >
     <template v-for="image in images">
       <GridItem
@@ -75,7 +71,6 @@ import { useBreakpoints } from '@vueuse/core';
 import GridLayout from '@/components/vue-grid-layout/GridLayout.vue';
 import GridItem from '@/components/vue-grid-layout/GridItem.vue';
 import { IGridLocation, IImage } from '@/types/images';
-import { watch } from 'fs';
 
 export default defineComponent({
   name: 'GridDefault',

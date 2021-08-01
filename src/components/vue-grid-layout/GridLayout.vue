@@ -24,7 +24,11 @@ export default defineComponent({
       type: Number,
       default: 30,
     },
-    gap: {
+    rowGap: {
+      type: Number,
+      default: 15,
+    },
+    columnGap: {
       type: Number,
       default: 15,
     },
@@ -33,7 +37,8 @@ export default defineComponent({
     const styleObj = reactive({
       gridTemplateColumns: `repeat(${props.columnsNumber}, 1fr)`,
       gridTemplateRows: `repeat(${props.rowsNumber}, ${props.rowHeight}px)`,
-      gap: `${props.gap}px`,
+      rowGap: `${props.rowGap}px`,
+      columnGap: `${props.columnGap}px`,
     });
 
     return {

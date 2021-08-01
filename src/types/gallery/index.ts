@@ -55,4 +55,5 @@ export interface IGallery {
   limit: ILimit;
   filter: IFilter;
   loadmore: ILoadmore;
+  rowHeight: number;
 }
