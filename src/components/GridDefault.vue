@@ -6,8 +6,8 @@
     :columns-number="12"
     :rows-number="30"
     :row-height="30"
-    :row-gap="15"
-    :column-gap="15"
+    :row-gap="rowGap"
+    :column-gap="columnGap"
   >
     <template v-for="image in images">
       <GridItem
@@ -65,12 +65,16 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import { useStore } from 'vuex';
+import {
+  defineComponent,
+  PropType,
+} from 'vue';
 import { useBreakpoints } from '@vueuse/core';
 import GridLayout from '@/components/vue-grid-layout/GridLayout.vue';
 import GridItem from '@/components/vue-grid-layout/GridItem.vue';
-import { IGridLocation, IImage } from '@/types/images';
+import { IImage } from '@/types/images';
+import { IGallery } from '../types/gallery';
+import { ISettings } from '../types/settings';
 
 export default defineComponent({
   name: 'GridDefault',
@@ -78,11 +82,25 @@ export default defineComponent({
     GridLayout,
     GridItem,
   },
-  async setup(props, ctx) {
-    const store = useStore();
-    await store.dispatch('getData');
-    const images = store.getters.getImages;
-
+  props: {
+    images: {
+      require: true,
+      default: () => [],
+      type: Array as PropType<IImage[]>,
+    },
+    gallery: {
+      require: true,
+      default: () => {},
+      type: Object as PropType<IGallery>,
+    },
+    settings: {
+      require: true,
+      default: () => {},
+      type: Object as PropType<ISettings>,
+    },
+  },
+  setup(props, ctx) {
+    console.log(props.images)
     const breakpoints = useBreakpoints({
       sm: 576,
       md: 768,
@@ -96,83 +114,12 @@ export default defineComponent({
     const lg = breakpoints.between('lg', 'xl');
     const xl = breakpoints.greater('xl');
 
-    const getLayout = (image: IImage, screenSize: {
-      xs: boolean,
-      sm: boolean,
-      md: boolean,
-      lg: boolean,
-      xl: boolean,
-    }): IGridLocation => {
-      if (screenSize.xs) {
-        return image.layout.xs;
-      }
-
-      if (screenSize.sm) {
-        return image.layout.sm;
-      }
-
-      if (screenSize.md) {
-        return image.layout.md;
-      }
-
-      if (screenSize.lg) {
-        return image.layout.lg;
-      }
-
-      if (screenSize.xl) {
-        return image.layout.xl;
-      }
-
-      return image.layout.xs;
-    };
-
-    const getX = (image: IImage, screenSize: {
-      xs: boolean,
-      sm: boolean,
-      md: boolean,
-      lg: boolean,
-      xl: boolean,
-    }): number => {
-      if (screenSize.xs) {
-        console.log('sdf')
-        return image.layout.xs.x;
-      }
-
-      if (screenSize.sm) {
-
-        console.log('sdf')
-        return image.layout.sm.x;
-      }
-
-      if (screenSize.md) {
-
-        console.log('sdf')
-        return image.layout.md.x;
-      }
-
-      if (screenSize.lg) {
-
-        console.log('sdf')
-        return image.layout.lg.x;
-      }
-      if (screenSize.xl) {
-        console.log('sdf')
-        return image.layout.xl.x;
-      }
-
-      console.log('sdf')
-      return image.layout.xs.x;
-    };
-
-    return {
-      images,
+   return {
       xs,
       sm,
       md,
       lg,
       xl,
-      getLayout,
-      getX,
     };
   },
 });
