@@ -35,6 +35,7 @@ export default defineComponent({
   },
   setup(props) {
     console.log('row gap:'+props.rowGap)
+
     const styleObj = reactive({
       gridTemplateColumns: `repeat(${props.columnsNumber}, 1fr)`,
       gridTemplateRows: `repeat(${props.rowsNumber}, ${props.rowHeight}px)`,

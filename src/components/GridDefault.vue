@@ -1,5 +1,7 @@
 <template>
   <h1>eGallery</h1>
+  <h1>row: {{ rowGap }}</h1>
+  <h1>column: {{ columnGap }}</h1>
   <!--TODO: Sủa lại cả gap và x, y, w, h theo 1 cách nào đó-->
   <!--khôg cần đến nhân lên nhiều v-if-->
   <GridLayout
@@ -68,6 +70,9 @@
 import {
   defineComponent,
   PropType,
+  ref,
+  toRefs,
+  watch,
 } from 'vue';
 import { useBreakpoints } from '@vueuse/core';
 import GridLayout from '@/components/vue-grid-layout/GridLayout.vue';
@@ -99,8 +104,13 @@ export default defineComponent({
       type: Object as PropType<ISettings>,
     },
   },
-  setup(props, ctx) {
-    console.log(props.images)
+  setup(props) {
+    const {
+      images,
+      gallery,
+      settings,
+    } = toRefs(props);
+
     const breakpoints = useBreakpoints({
       sm: 576,
       md: 768,
@@ -114,12 +124,45 @@ export default defineComponent({
     const lg = breakpoints.between('lg', 'xl');
     const xl = breakpoints.greater('xl');
 
-   return {
+    const rowGap = ref<number>(10);
+    const columnGap = ref<number>(10);
+
+    //TODO: Change on resize and refactor to Use
+    watch([xs, sm, md, lg, xl], () => {
+      if (xs.value) {
+        rowGap.value = gallery.value.rowGap.xs;
+        columnGap.value = gallery.value.columnGap.xs;
+      }
+
+      if (sm.value) {
+        rowGap.value = gallery.value.rowGap.sm;
+        columnGap.value = gallery.value.columnGap.sm;
+      }
+
+      if (md.value) {
+        rowGap.value = gallery.value.rowGap.md;
+        columnGap.value = gallery.value.columnGap.md;
+      }
+
+      if (lg.value) {
+        rowGap.value = gallery.value.rowGap.lg;
+        columnGap.value = gallery.value.columnGap.lg;
+      }
+
+      if (xl.value) {
+        rowGap.value = gallery.value.rowGap.xl;
+        columnGap.value = gallery.value.columnGap.xl;
+      }
+    }, { immediate: true });
+
+    return {
       xs,
       sm,
       md,
       lg,
       xl,
+      rowGap,
+      columnGap,
     };
   },
 });
