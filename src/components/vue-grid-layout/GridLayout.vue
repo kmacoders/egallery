@@ -1,7 +1,4 @@
 <template>
-  <h1>Grid Layout</h1>
-  <h2>{{ rowGap }}</h2>
-  <h2>{{ columnGap }}</h2>
   <div
     class="r-grid-container"
     :style="styleObj"

@@ -9,7 +9,7 @@
   </div>
 </template>
 <script lang="ts">
-import { defineComponent, reactive } from 'vue';
+import { defineComponent, reactive, watch, toRefs } from 'vue';
 
 export default defineComponent({
   name: 'GridItem',
@@ -53,11 +53,23 @@ export default defineComponent({
     },
   },
   setup(props) {
+    const {
+      x,
+      y,
+      w,
+      h,
+    } = toRefs(props);
+
     const styleObj = reactive({
       backgroundColor: `${props.backgroundColor}`,
       gridColumn: `${Number(props.x) + 1}/ span ${props.w}`,
       gridRow: `${Number(props.y) + 1}/ span ${props.h}`,
     });
+
+    watch([x, y, w, h], () => {
+      styleObj.gridColumn = `${Number(props.x) + 1}/ span ${props.w}`;
+      styleObj.gridRow = `${Number(props.y) + 1}/ span ${props.h}`;
+    }, { immediate: true })
 
     return {
       styleObj,
