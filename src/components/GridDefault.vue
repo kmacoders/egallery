@@ -74,7 +74,8 @@ import {
   toRefs,
   watch,
 } from 'vue';
-import { useBreakpoints } from '@vueuse/core';
+import useBootstrapBreakpoint from '@/composables/useBootstrapBreakpoint';
+import useGap from '@/composables/useGap';
 import GridLayout from '@/components/vue-grid-layout/GridLayout.vue';
 import GridItem from '@/components/vue-grid-layout/GridItem.vue';
 import { IImage } from '@/types/images';
@@ -106,54 +107,27 @@ export default defineComponent({
   },
   setup(props) {
     const {
-      images,
       gallery,
-      settings,
     } = toRefs(props);
 
-    const breakpoints = useBreakpoints({
-      sm: 576,
-      md: 768,
-      lg: 992,
-      xl: 1200,
-    });
+    const {
+      xs,
+      sm,
+      md,
+      lg,
+      xl,
+    } = useBootstrapBreakpoint();
 
-    const xs = breakpoints.smaller('sm');
-    const sm = breakpoints.between('sm', 'md');
-    const md = breakpoints.between('md', 'lg');
-    const lg = breakpoints.between('lg', 'xl');
-    const xl = breakpoints.greater('xl');
-
-    const rowGap = ref<number>(10);
-    const columnGap = ref<number>(10);
-
-    //TODO: Change on resize and refactor to Use
-    watch([xs, sm, md, lg, xl], () => {
-      if (xs.value) {
-        rowGap.value = gallery.value.rowGap.xs;
-        columnGap.value = gallery.value.columnGap.xs;
-      }
-
-      if (sm.value) {
-        rowGap.value = gallery.value.rowGap.sm;
-        columnGap.value = gallery.value.columnGap.sm;
-      }
-
-      if (md.value) {
-        rowGap.value = gallery.value.rowGap.md;
-        columnGap.value = gallery.value.columnGap.md;
-      }
-
-      if (lg.value) {
-        rowGap.value = gallery.value.rowGap.lg;
-        columnGap.value = gallery.value.columnGap.lg;
-      }
-
-      if (xl.value) {
-        rowGap.value = gallery.value.rowGap.xl;
-        columnGap.value = gallery.value.columnGap.xl;
-      }
-    }, { immediate: true });
+    const {
+      rowGap,
+      columnGap,
+    } = useGap({
+      xs,
+      sm,
+      md,
+      lg,
+      xl,
+    }, gallery);
 
     return {
       xs,
