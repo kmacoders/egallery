@@ -1,4 +1,7 @@
 <template>
+  <h1>Grid Layout</h1>
+  <h2>{{ rowGap }}</h2>
+  <h2>{{ columnGap }}</h2>
   <div
     class="r-grid-container"
     :style="styleObj"
@@ -7,7 +10,7 @@
   </div>
 </template>
 <script lang="ts">
-import { defineComponent, reactive } from 'vue';
+import { defineComponent, reactive, watch, toRefs } from 'vue';
 
 export default defineComponent({
   name: 'GridLayout',
@@ -34,14 +37,25 @@ export default defineComponent({
     },
   },
   setup(props) {
-    console.log('row gap:'+props.rowGap)
+    const {
+      columnsNumber,
+      rowsNumber,
+      rowHeight,
+      rowGap,
+      columnGap,
+    } = toRefs(props);
 
     const styleObj = reactive({
-      gridTemplateColumns: `repeat(${props.columnsNumber}, 1fr)`,
-      gridTemplateRows: `repeat(${props.rowsNumber}, ${props.rowHeight}px)`,
-      rowGap: `${props.rowGap}px`,
-      columnGap: `${props.columnGap}px`,
+      gridTemplateColumns: `repeat(${columnsNumber.value}, 1fr)`,
+      gridTemplateRows: `repeat(${rowsNumber.value}, ${rowHeight.value}px)`,
+      rowGap: `${rowGap.value}px`,
+      columnGap: `${columnGap.value}px`,
     });
+
+    watch([rowGap, columnGap], () => {
+      styleObj.rowGap = `${rowGap.value}px`;
+      styleObj.columnGap = `${columnGap.value}px`;
+    }, { immediate: true });
 
     return {
       styleObj,
