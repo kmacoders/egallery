@@ -3,7 +3,7 @@
   <GridLayout
     :columns-number="12"
     :rows-number="30"
-    :row-height="30"
+    :row-height="rowHeight"
     :row-gap="rowGap"
     :column-gap="columnGap"
   >
@@ -15,7 +15,10 @@
       :w="imgPositionBreakpoints(image).w"
       :h="imgPositionBreakpoints(image).h"
     >
-      <img :src="image.src">
+      <img
+        :src="image.src"
+        :alt="image.alt"
+      >
     </GridItem>
   </GridLayout>
 </template>
@@ -71,6 +74,7 @@ export default defineComponent({
 
     return {
       rowGap,
+      rowHeight: gallery.value.settings.rowHeight,
       columnGap,
       imgPositionBreakpoints,
     };

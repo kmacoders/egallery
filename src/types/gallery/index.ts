@@ -39,6 +39,27 @@ interface ILoadmore {
   loadingText: string;
 }
 
+interface IGallerySettings {
+  background: {
+    type: string;
+    solid: string;
+    gradient: string;
+    gradientEffect: string;
+    image: string;
+    video: string;
+  };
+  parallax: {
+    enable: boolean;
+  };
+  scrollAnimation: {
+    type: string;
+  };
+  loadingAnimation: {
+    type: string;
+  };
+  rowHeight: number;
+}
+
 // Gallery
 export interface IGallery {
   rowGap: {
@@ -55,5 +76,5 @@ export interface IGallery {
   limit: ILimit;
   filter: IFilter;
   loadmore: ILoadmore;
-  rowHeight: number;
+  settings: IGallerySettings;
 }
