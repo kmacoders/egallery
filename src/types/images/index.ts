@@ -36,6 +36,7 @@ interface IImageButton {
 }
 
 export interface IImage {
+  id: string;
   src: string;
   alt: string;
   layout: {

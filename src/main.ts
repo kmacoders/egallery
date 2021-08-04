@@ -1,10 +1,9 @@
 import { createApp } from 'vue';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
 import store from '@/stores';
+import AOS from 'aos';
 import { aos, aosOnce } from '@/directives/aos';
-import './styles/main.scss';
 import App from './App.vue';
+import './styles/main.scss';
 import { qsa } from './helpers/dom';
 
 export default class EGallery {

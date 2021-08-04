@@ -15,10 +15,15 @@
       :w="imgPositionBreakpoints(image).w"
       :h="imgPositionBreakpoints(image).h"
     >
-      <img
-        :src="image.src"
-        :alt="image.alt"
-      >
+      <figure class="imghvr-push-right">
+        <img
+          :src="image.src"
+          :alt="image.alt"
+        >
+        <figcaption>
+          Hover content
+        </figcaption>
+      </figure>
     </GridItem>
   </GridLayout>
 </template>
@@ -86,5 +91,10 @@ export default defineComponent({
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  figure {
+    width: 100%;
+    height: 100%;
   }
 </style>
