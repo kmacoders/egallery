@@ -15,7 +15,7 @@
       :w="imgPositionBreakpoints(image).w"
       :h="imgPositionBreakpoints(image).h"
     >
-      <figure class="imghvr-push-right">
+      <figure class="imghvr-fade-in-up">
         <img
           :src="image.src"
           :alt="image.alt"

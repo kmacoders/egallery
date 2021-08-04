@@ -55,7 +55,7 @@ export default defineComponent({
     },
     backgroundColor: {
       type: String,
-      default: '#e9e9e9',
+      default: '#f00',
       validator: (strColor: string): boolean => /^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/i.test(strColor),
     },
   },
@@ -71,7 +71,6 @@ export default defineComponent({
     } = toRefs(props);
 
     const styleObj = reactive({
-      backgroundColor: `${props.backgroundColor}`,
       gridColumn: `${Number(props.x) + 1}/ span ${props.w}`,
       gridRow: `${Number(props.y) + 1}/ span ${props.h}`,
     });
