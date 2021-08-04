@@ -1,14 +1,14 @@
 <template>
   <div class="e-container">
-    <template v-if="isLoaded">
+    <template v-if="isLoading">
+      <SvgIconLoading />
+    </template>
+    <template v-else>
       <GridDefault
         :images="images"
         :gallery="gallery"
         :settings="settings"
       />
-    </template>
-    <template v-else>
-      <SvgIconLoading />
     </template>
   </div>
 </template>
@@ -33,25 +33,21 @@ export default defineComponent({
     SvgIconLoading,
   },
   setup() {
-    const isLoaded = ref<boolean>(false);
-
     const store = useStore();
+    const isLoading = ref<boolean>(store.getters.getIsLoading); // has initial value
     const images = ref<IImage[]>([] as IImage[]);
     const gallery = ref<IGallery>({} as IGallery);
     const settings = ref<ISettings>({} as ISettings);
-
     onMounted(async () => {
       await store.dispatch('getData');
-
       images.value = store.getters.getImages;
       gallery.value = store.getters.getGallery;
       settings.value = store.getters.getSettings;
-
-      isLoaded.value = true;
+      isLoading.value = store.getters.getIsLoading;
     });
 
     return {
-      isLoaded,
+      isLoading,
       images,
       gallery,
       settings,

@@ -11,6 +11,7 @@ import { IImage } from '../types/images';
 import { ISettings } from '../types/settings';
 
 enum MutationType {
+  setIsLoading = 'SET_LOADING',
   setImages = 'SET_IMAGES',
   setGallery = 'SET_GALLERY',
   setSettings = 'SET_SETTINGS',
@@ -18,11 +19,17 @@ enum MutationType {
 
 @Module
 export default class EGallery extends VuexModule {
+  private isLoading = true;
+
   private images: IImage[];
 
   private gallery: IGallery;
 
   private settings: ISettings;
+
+  get getIsLoading(): boolean {
+    return this.isLoading;
+  }
 
   get getImages(): IImage[] {
     return this.images;
@@ -34,6 +41,11 @@ export default class EGallery extends VuexModule {
 
   get getSettings(): ISettings {
     return this.settings;
+  }
+
+  @Mutation
+  [MutationType.setIsLoading](payload: boolean): void {
+    this.isLoading = payload;
   }
 
   @Mutation
@@ -53,11 +65,13 @@ export default class EGallery extends VuexModule {
 
   @Action
   async getData(): Promise<void> {
+    this.context.commit(MutationType.setIsLoading, true);
     // TODO: remove fake
     await stall(1500);
     const data = await GetData.getDataJson();
     this.context.commit(MutationType.setImages, data.images);
     this.context.commit(MutationType.setGallery, data.gallery);
     this.context.commit(MutationType.setSettings, data.settings);
+    this.context.commit(MutationType.setIsLoading, false);
   }
 }

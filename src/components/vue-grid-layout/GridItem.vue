@@ -2,14 +2,21 @@
   <div
     v-aos="'zoom-in'"
     v-aos-once="true"
-    class="r-grid-item loading-ui is-image"
+    :class="'r-grid-item' + ( isLoading ? ' loading-ui is-image' : '')"
     :style="styleObj"
   >
     <slot />
   </div>
 </template>
 <script lang="ts">
-import { defineComponent, reactive, watch, toRefs } from 'vue';
+import {
+  defineComponent,
+  reactive,
+  watch,
+  toRefs,
+  ref,
+} from 'vue';
+import { useStore } from 'vuex';
 
 export default defineComponent({
   name: 'GridItem',
@@ -48,11 +55,14 @@ export default defineComponent({
     },
     backgroundColor: {
       type: String,
-      default: '#eee',
+      default: '#e9e9e9',
       validator: (strColor: string): boolean => /^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/i.test(strColor),
     },
   },
   setup(props) {
+    const store = useStore();
+    const isLoading = ref<boolean>(store.getters.getIsLoading); // has initial value
+
     const {
       x,
       y,
@@ -69,9 +79,10 @@ export default defineComponent({
     watch([x, y, w, h], () => {
       styleObj.gridColumn = `${Number(props.x) + 1}/ span ${props.w}`;
       styleObj.gridRow = `${Number(props.y) + 1}/ span ${props.h}`;
-    }, { immediate: true })
+    }, { immediate: true });
 
     return {
+      isLoading,
       styleObj,
     };
   },
