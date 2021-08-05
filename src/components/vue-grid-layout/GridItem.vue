@@ -1,12 +1,14 @@
 <template>
-  <div
+  <a
+    href="#"
     v-aos="'zoom-in'"
     v-aos-once="true"
     :class="'r-grid-item' + ( isLoading ? ' loading-ui is-image' : '')"
     :style="styleObj"
+    data-src="https://source.unsplash.com/collection/190727/1600x900"
   >
     <slot />
-  </div>
+  </a>
 </template>
 <script lang="ts">
 import {

@@ -1,13 +1,20 @@
 <template>
   <div
-    class="r-grid-container"
+    class="r-grid-container lightgallery"
     :style="styleObj"
   >
-    <slot/>
+    <slot />
   </div>
 </template>
 <script lang="ts">
-import { defineComponent, reactive, watch, toRefs } from 'vue';
+import {
+  defineComponent, reactive, watch, toRefs,
+} from 'vue';
+import lightGallery from 'lightgallery';
+// Plugins
+import lgThumbnail from 'lightgallery/plugins/thumbnail';
+import lgZoom from 'lightgallery/plugins/zoom';
+import { qs } from '@@/src/helpers/dom';
 
 export default defineComponent({
   name: 'GridLayout',
@@ -53,6 +60,11 @@ export default defineComponent({
       styleObj.rowGap = `${rowGap.value}px`;
       styleObj.columnGap = `${columnGap.value}px`;
     }, { immediate: true });
+
+    lightGallery(qs('.lightgallery') as HTMLElement, {
+      plugins: [lgZoom, lgThumbnail],
+      speed: 300,
+    });
 
     return {
       styleObj,

@@ -4,3 +4,8 @@ imghvr-shutter-out-*
 imghvr-zoom-in
 imghvr-fade
 imghvr-fade-*
+
+
+...
+Load font tu assets
+bundle ra js, css, font
