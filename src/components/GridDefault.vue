@@ -17,7 +17,9 @@
     >
       <figure class="imghvr-fade-in-up">
         <img
-          :src="image.src"
+          class="e-lazy-image"
+          :data-src="image.src"
+          src="https://via.placeholder.com/1/e8e8e8"
           :alt="image.alt"
         >
         <figcaption>

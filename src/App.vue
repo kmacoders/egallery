@@ -17,6 +17,7 @@
 import {
   defineComponent,
   onMounted,
+  onUpdated,
   ref,
 } from 'vue';
 import { useStore } from 'vuex';
@@ -25,6 +26,7 @@ import SvgIconLoading from '@/components/loading/SvgIconLoading.vue';
 import { IImage } from './types/images';
 import { IGallery } from './types/gallery';
 import { ISettings } from './types/settings';
+import initLazyload from './helpers/lazyload';
 
 export default defineComponent({
   name: 'App',
@@ -44,6 +46,10 @@ export default defineComponent({
       gallery.value = store.getters.getGallery;
       settings.value = store.getters.getSettings;
       isLoading.value = store.getters.getIsLoading;
+    });
+
+    onUpdated(() => {
+      initLazyload();
     });
 
     return {
