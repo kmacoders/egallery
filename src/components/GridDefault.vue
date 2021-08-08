@@ -14,6 +14,7 @@
       :y="imgPositionBreakpoints(image).y"
       :w="imgPositionBreakpoints(image).w"
       :h="imgPositionBreakpoints(image).h"
+      :src-light-gallery="image.src"
     >
       <figure class="imghvr-fade-in-up">
         <img

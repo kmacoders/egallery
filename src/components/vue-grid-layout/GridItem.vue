@@ -5,7 +5,7 @@
     v-aos-once="true"
     :class="'r-grid-item' + ( isLoading ? ' loading-ui is-image' : '')"
     :style="styleObj"
-    data-src="https://source.unsplash.com/collection/190727/1600x900"
+    :data-src="srcLightGallery"
   >
     <slot />
   </a>
@@ -55,11 +55,7 @@ export default defineComponent({
       type: Number,
       default: Infinity,
     },
-    backgroundColor: {
-      type: String,
-      default: '#f00',
-      validator: (strColor: string): boolean => /^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/i.test(strColor),
-    },
+    srcLightGallery: String,
   },
   setup(props) {
     const store = useStore();
