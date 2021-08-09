@@ -28,6 +28,8 @@ import { IGallery } from './types/gallery';
 import { ISettings } from './types/settings';
 import initLazyload from './helpers/lazyload';
 
+declare let GLightbox: any;
+
 export default defineComponent({
   name: 'App',
   components: {
@@ -50,6 +52,7 @@ export default defineComponent({
 
     onUpdated(() => {
       initLazyload();
+      const lightbox = GLightbox({});
     });
 
     return {

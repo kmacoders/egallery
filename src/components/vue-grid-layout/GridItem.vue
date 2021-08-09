@@ -1,11 +1,10 @@
 <template>
   <a
-    href="#"
+    :href="srcLightGallery"
     v-aos="'zoom-in'"
     v-aos-once="true"
-    :class="'r-grid-item' + ( isLoading ? ' loading-ui is-image' : '')"
+    :class="'r-grid-item glightbox' + ( isLoading ? ' loading-ui is-image' : '')"
     :style="styleObj"
-    :data-src="srcLightGallery"
   >
     <slot />
   </a>

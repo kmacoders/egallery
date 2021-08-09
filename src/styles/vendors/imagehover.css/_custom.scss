@@ -1,16 +1,22 @@
-// Imagehover.css overrides
-//
-// Copy variables from `_variables.scss` to this file to override default values without modifying source files.
+:root {
+  --image-bg: #f8f8f8;
+  --figcaption-bg: rgba(0, 0, 0, 0.3);
+  --figcaption-padding: 30px;
+  --text-color: #ffffff;
+  --border-color: #ffffff;
+  --border-margin: 5px;
+  --border-width: 4px;
+  --shift-distance: 10px;
+}
 
-$image-bg:             #f8f8f8;
-$figcaption-bg:        rgba(0,0,0,0.3);
-$figcaption-padding:   30px !default;
-$text-color:           #ffffff !default;
-$border-color:         #ffffff !default;
-$border-margin:        5px !default;
-$border-width:         4px !default;
-$transition-duration:  0.35s !default;
-$shift-distance:       10px !default;
+$image-bg:             var(--image-bg);
+$figcaption-bg:        var(--figcaption-bg);
+$figcaption-padding:   var(--figcaption-padding);
+$text-color:           var(--text-color);
+$border-color:         var(--border-color);
+$border-margin:        var(--border-margin);
+$border-width:         var(--border-width);
+$shift-distance:       var(--shift-distance);
 
 [class^="imghvr-"],
 [class*=" imghvr-"]  {

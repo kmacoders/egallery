@@ -1,6 +1,6 @@
 <template>
   <div
-    class="r-grid-container lightgallery"
+    class="r-grid-container"
     :style="styleObj"
   >
     <slot />
@@ -10,10 +10,6 @@
 import {
   defineComponent, reactive, watch, toRefs,
 } from 'vue';
-import lightGallery from 'lightgallery';
-// Plugins
-import lgThumbnail from 'lightgallery/plugins/thumbnail';
-import lgZoom from 'lightgallery/plugins/zoom';
 import { qs } from '@@/src/helpers/dom';
 
 export default defineComponent({
@@ -61,10 +57,6 @@ export default defineComponent({
       styleObj.columnGap = `${columnGap.value}px`;
     }, { immediate: true });
 
-    lightGallery(qs('.lightgallery') as HTMLElement, {
-      plugins: [lgZoom, lgThumbnail],
-      speed: 300,
-    });
 
     return {
       styleObj,
