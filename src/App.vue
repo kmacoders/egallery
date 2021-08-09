@@ -20,6 +20,7 @@ import {
   onUpdated,
   ref,
 } from 'vue';
+import GLightbox from 'glightbox';
 import { useStore } from 'vuex';
 import GridDefault from '@/components/GridDefault.vue';
 import SvgIconLoading from '@/components/loading/SvgIconLoading.vue';
@@ -27,8 +28,6 @@ import { IImage } from './types/images';
 import { IGallery } from './types/gallery';
 import { ISettings } from './types/settings';
 import initLazyload from './helpers/lazyload';
-
-declare let GLightbox: any;
 
 export default defineComponent({
   name: 'App',
