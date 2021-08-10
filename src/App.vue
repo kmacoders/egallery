@@ -51,7 +51,13 @@ export default defineComponent({
 
     onUpdated(() => {
       initLazyload();
-      const lightbox = GLightbox({});
+      const lightbox = GLightbox({
+        descPosition: 'right',
+        width: '900px',
+        height: 'auto',
+        zoomable: true,
+        draggable: true,
+      });
     });
 
     return {

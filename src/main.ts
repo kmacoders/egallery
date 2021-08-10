@@ -1,7 +1,8 @@
 import { createApp } from 'vue';
-import store from '@/stores';
 import AOS from 'aos';
+import store from '@/stores';
 import { aos, aosOnce } from '@/directives/aos';
+import { glightboxTitle, glightboxDescription, glightboxType } from './directives/glightbox';
 import App from './App.vue';
 import './styles/main.scss';
 import { qsa } from './helpers/dom';
@@ -21,6 +22,9 @@ export default class EGallery {
       .use(store)
       .directive('aos', aos)
       .directive('aos-once', aosOnce)
+      .directive('glightbox-title', glightboxTitle)
+      .directive('glightbox-description', glightboxDescription)
+      .directive('glightbox-type', glightboxType)
       .mount(this.el);
   }
 }

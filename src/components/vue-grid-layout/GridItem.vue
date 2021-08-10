@@ -1,8 +1,11 @@
 <template>
   <a
-    :href="srcLightGallery"
+    v-glightbox-title="'Huwng'"
+    v-glightbox-description="'Description'"
+    v-glightbox-type="'image'"
     v-aos="'zoom-in'"
     v-aos-once="true"
+    :href="srcLightGallery"
     :class="'r-grid-item glightbox' + ( isLoading ? ' loading-ui is-image' : '')"
     :style="styleObj"
   >
